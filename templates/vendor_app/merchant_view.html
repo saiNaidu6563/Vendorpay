@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merchant view</title>
+</head>
+<body>
+  <h2>Merchant Transaction View</h2>
+<p><strong>Transaction ID:</strong> {{ transaction.transaction_id }}</p>
+<p><strong>Merchant Share:</strong> ₹{{ transaction.merchant_share }}</p>
+<p><strong>Order ID:</strong> {{ transaction.order.oid }}</p>
+<p><strong>Product ID:</strong> {{ transaction.order.product.pid }}</p>
+
+</body>
+</html>

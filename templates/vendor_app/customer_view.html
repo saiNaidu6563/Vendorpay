@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer View</title>
+</head>
+<body>
+    <h2>Customer Transaction View</h2>
+    <p><strong>Transaction ID:</strong> {{ transaction.transaction_id }}</p>
+    <p><strong>Amount Paid:</strong> ₹{{ transaction.actual_amount }}</p>
+    <p><strong>Product:</strong> {{ transaction.order.product.product_name }}</p>
+    <p><strong>Customer Address:</strong> {{ transaction.order.customer.address }}</p>
+
+</body>
+</html>

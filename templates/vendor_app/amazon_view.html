@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon View</title>
+</head>
+<body>
+  <h2>Amazon Transaction View</h2>
+  <p><strong>Transaction ID:</strong> {{ transaction.transaction_id }}</p>
+  <p><strong>Commission:</strong> ₹{{ transaction.commission }}</p>
+  <p><strong>Customer ID:</strong> {{ transaction.order.customer.cid }}</p>
+  <p><strong>Order ID:</strong> {{ transaction.order.oid }}</p>
+
+</body>
+</html>
